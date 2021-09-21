@@ -1,5 +1,5 @@
-const bodyParser = require('body-parser');
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 
 
@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
  
 //paggit routes
-var routes = require('./router');
+var routes = require('./routes');
 routes(app);
 
 app.listen(3000, () => {
