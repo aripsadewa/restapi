@@ -1,9 +1,9 @@
 'use strict';
 
-export.ok = function(value, res){
+exports.ok = function(values, res){
     var data = {
-        'sattus':200,
-        'value':values
+        'status':200,
+        'values':values
     };
 
      res.json(data);
