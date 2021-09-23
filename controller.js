@@ -81,7 +81,7 @@ exports.tampilgroupmatakuliah = function(req, res){
         if (error) {
             connection.log(error);
         } else {
-            response.oknested(rows, res)
+            response.ok(rows, res)
         }
     });
 
